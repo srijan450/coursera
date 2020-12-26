@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href=".\css\main.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="head">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><h1>Food, LLC</h1></a>
+          <button class="navbar-toggler d-sm-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        </div>
+      </nav>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="link" aria-current="page" href="#ch">Chicken</a>
+          </li>
+          <li class="nav-item">
+            <a class="link" href="#be">Beef</a>
+          </li>
+          <li class="nav-item">
+            <a class="link" id="last" href="#su">Sushi</a>
+          </li>
+        </ul>
+      </div>
+      <h1 align="center">Our Menu</h1>
+    <div class="container">
+      <div class="row">
+        <div class="ch col-lg-3 col-md-5 col-11 mar " id="ch">
+          <h2>Chicken</h2>
+          <p>Workin' on the weekend like usual
+            Way off in the deep end like usual
+            Niggas swear they passed us, they doin' too much
+            Haven't done my taxes, I'm too turnt up
+            Virgil got a Patek on my wrist going nuts
+            Niggas caught me slipping once, okay, so what?
+            Someone hit your block up, I'd tell you if it was us
+            Manor house in Rosewood, this shit too plush</p>
+            <a class="lin d-sm-none" href="#head">Back to top</a>
+        </div>
+        <div class="be col-lg-3 col-md-5 col-11 mar " id="be">
+          <h2>Beef</h2>
+          <p>Workin' on the weekend like usual
+            Way off in the deep end like usual
+            Niggas swear they passed us, they doin' too much
+            Haven't done my taxes, I'm too turnt up
+            Virgil got a Patek on my wrist going nuts
+            Niggas caught me slipping once, okay, so what?
+            Someone hit your block up, I'd tell you if it was us
+            Manor house in Rosewood, this shit too plush</p>
+            <a class="lin d-sm-none" href="#head">Back to top</a>
+        </div>
+        <div class="su col-lg-3 col-md-11 col-11 mar" id="su">
+          <h2>Sushi</h2>
+          <p>Workin' on the weekend like usual
+            Way off in the deep end like usual
+            Niggas swear they passed us, they doin' too much
+            Haven't done my taxes, I'm too turnt up
+            Virgil got a Patek on my wrist going nuts
+            Niggas caught me slipping once, okay, so what?
+            Someone hit your block up, I'd tell you if it was us
+            Manor house in Rosewood, this shit too plush</p>
+            <a class="lin d-sm-none" href="#head">Back to top</a>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>

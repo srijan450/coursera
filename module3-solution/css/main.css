@@ -1,0 +1,109 @@
+
+.link , .link:active, .link:hover{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+  .lin{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  #last{
+      border-bottom: 2px solid black;
+  }
+  .su,.be,.ch,#head{
+    background-color: lightslategrey;
+  }
+  .su h2,.be h2,.ch h2{
+    text-align: center;
+  }
+  .mar{
+      margin: 10px auto;
+  }
+  /* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin: 8vh;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+div{
+    width: 30%;
+    background-color: lightslategrey;
+    border: 2px solid black;
+    margin: auto;
+}
+span{
+    text-align: center;
+    float: right;
+    width: 30%;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.ch span{
+    background-color: lightsalmon;
+}
+.be span{
+    background-color: red;
+    color: white;
+}
+.su span{
+    background-color: khaki;
+    color:  black;
+}
+p{
+ font-size: 1rem;
+ padding: 10px;
+}
+@media (min-width:768px) and (max-width:991px){
+    .ch , .be{
+        width: 48%;
+        margin: auto;
+    }
+    .su{
+        width: 100%;
+        margin: 10px;
+    }
+    span{
+        font-size: 1.2rem;
+    }
+    .su span{
+        width: 15%;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+@media (max-width:767px)
+{
+    h1{
+        margin: 5%;
+    }
+    div{
+        width: 100%;
+        margin: 10px;
+    }
+    p{
+        font-size: 1rem;
+       }
+    span{
+        font-size: 1.2rem;
+        width: 40%;
+    }
+} */
