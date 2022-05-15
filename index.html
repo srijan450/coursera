@@ -2,10 +2,23 @@
 <html>
 <head>
 <title>
-P
+Coursera
 </title>
 </head>
 <body>
-Hello world
+  <h1>Learned from coursera</h1>
+  <p><strong>Redirecting to best part of learned project in <span id="timer">10</span> sec</strong></p>
+  
+  <script>
+    const timer = document.getElementById("timer");
+    let time = 10
+    const I = setInterval(()=>{
+        if(time == 0){
+          clearInterval(I);
+          window.location.redirect("https://srijan450.github.io/coursera/module5-solution/");
+        }
+      time--;
+    },1000);
+  </script>
 </body>
 </html>
